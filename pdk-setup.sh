@@ -35,7 +35,7 @@ export SCRIPT_DIR="$my_dir"
 export KLAYOUT_VERSION=0.29.5
 
 # for Mac
-export MAC_OS_NAME=Sonoma
+export MAC_OS_NAME=Monterey
 export TCL_VERSION=8.6.14
 export TK_VERSION=8.6.14
 export GTK_VERSION=3.24.42
@@ -249,7 +249,7 @@ if [ "$(uname)" == 'Darwin' ]; then
   fi
   python3 build4mac.py -r HB33 -p HBAuto -q Qt5Brew -m ‘—jobs=8’ -n -u
   mkdir -p $HOME/bin/klayout.app
-  cp -aR   cd $SRC_DIR/klayout/qt5Brew.bin.macos-Sonoma-release-Rhb33Phbauto/* $HOME/bin/klayout.app/
+  cp -aR   cd $SRC_DIR/klayout/qt5Brew.bin.macos-Monterey-release-Rhb33Phbauto/* $HOME/bin/klayout.app/
   echo 'export PATH="$HOME/bin/:$PATH"' >> ~/.zshrc
   export PATH="$HOME/bin/:$PATH"
   cp $my_dir/klayout.sh $HOME/bin/

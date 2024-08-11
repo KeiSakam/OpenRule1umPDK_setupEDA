@@ -1,0 +1,7 @@
+** sch_path: /Users/sakamoto.kei/workspace/OpenRule1umPDK_setupEDA/inverter.sch
+.subckt TOP VDD VSS VIN VOUT
+*.PININFO VDD:B VSS:B VIN:I VOUT:O
+M1 VDD VIN VOUT VDD pchor1ex L=1.0u W=3.3u m=1
+M2 VOUT VIN VSS VSS nchor1ex L=1.0u W=2.0u m=1
+.ends
+.end
